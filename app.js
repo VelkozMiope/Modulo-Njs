@@ -1,18 +1,11 @@
-function fizzbuzz(){
-    for(let c = 1; c <= 20; c++) {
-        if (c % 3 === 0 && c % 5 === 0){
-            console.log("Fizz buzz");
-        }
-        else if (c % 3 === 0){
-            console.log("Fizz");
-        }
-        else if (c % 5 === 0){
-            console.log("Buzz");
-        }
-        else{
-            console.log(c)
-        };
-    };
+const fs = require ('fs').promises
+const path = require('path')
+const fizzbuzz = require("./fizzbuzz")
+main()
+async function main(){
+    const filepath = path.join(__dirname, 'input.txt')
+    const dados = await fs.readFile(filepath, 'utf8');
+    await fs.appendFile("output.txt", dados+'\n')
+    const max = Number(dados)
+    fizzbuzz(max)
 };
-
-fizzbuzz()

@@ -1,11 +1,13 @@
-const fs = require ('fs').promises
-const path = require('path')
-const fizzbuzz = require("./fizzbuzz")
-main()
-async function main(){
-    const filepath = path.join(__dirname, 'input.txt')
-    const dados = await fs.readFile(filepath, 'utf8');
-    await fs.appendFile("output.txt", dados+'\n')
-    const max = Number(dados)
-    fizzbuzz(max)
-};
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.use(express.static(`${__dirname}/public`))
+
+app.get('/', (req, res) => {
+    res.sendFile(`${__dirname}/index.html`)
+  })
+
+  app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VelkozMiope/Modulo-Njs/issues"
   },
-  "homepage": "https://github.com/VelkozMiope/Modulo-Njs#readme"
+  "homepage": "https://github.com/VelkozMiope/Modulo-Njs#readme",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
 }

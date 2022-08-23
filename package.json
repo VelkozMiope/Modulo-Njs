@@ -1,0 +1,19 @@
+{
+  "name": "modulo-njs",
+  "version": "1.0.0",
+  "description": "WTA Projeto",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VelkozMiope/Modulo-Njs.git"
+  },
+  "author": "Marcio P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VelkozMiope/Modulo-Njs/issues"
+  },
+  "homepage": "https://github.com/VelkozMiope/Modulo-Njs#readme"
+}

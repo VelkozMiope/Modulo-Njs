@@ -17,7 +17,7 @@ app.get('/transacoes', (req, res) => {
   res.send(transacoes)
 })
 
-app.get('/criar-transacao', (req, res) => {
+app.post('/transacoes', (req, res) => {
   const repositorio = new TransacoesRepositorio()
   const transacao = {
     valor: 15,

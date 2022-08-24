@@ -15,6 +15,11 @@ class TransacoesRepositorio {
     listarTransacoes() {
         return this.transacoes
     }
+
+    criarTransacao(transacao) {
+        const lista = this.transacoes.transacoes
+        lista.push(transacao)
+    }
 }
 
 module.exports = TransacoesRepositorio

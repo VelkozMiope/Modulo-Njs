@@ -4,7 +4,7 @@ const TransacoesRepositorio = require("./transacoes-repositorio")
 
 const app = express()
 const port = 3000
-
+app.use(express.json())
 app.use(express.static(`${__dirname}/public`))
 
 app.get('/', (req, res) => {
@@ -19,6 +19,7 @@ app.get('/transacoes', (req, res) => {
 
 app.post('/transacoes', (req, res) => {
   const repositorio = new TransacoesRepositorio()
+  console.log(req.body)
   const transacao = {
     valor: 15,
     descricao: "pastel"

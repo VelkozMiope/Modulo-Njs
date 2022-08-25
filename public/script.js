@@ -67,7 +67,7 @@ function setSaldo(saldo) {
     }`;
 }
 
-//setSaldo();
+setSaldo();
 
 function adicionaTransacoes(transacoes) {
   let tabela = '';
@@ -96,7 +96,7 @@ async function getTransacoes() {
   );
   const financas = await resposta.json();
 
-  //setSaldo(financas.saldo);
+  setSaldo(financas.saldo);
   adicionaTransacoes(financas.transacoes);
 
 

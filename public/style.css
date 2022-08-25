@@ -34,9 +34,9 @@ h1 {
 .informacao {
   width: 100%;
   text-align: center;
-  background-color: #2b2b2b;
+  background-color: black;
   padding: 16px 0;
-  border-radius: 8px;
+  border-radius: 5px;
   border-width: 5px;
   border-color: yellow;
   margin-bottom: 40px;
@@ -76,7 +76,7 @@ h1 {
 
 .lista-transacoes h3 {
   font-size: 14px;
-  color: #757680;
+  color: yellow;
 }
 
 .botoes {
@@ -112,16 +112,18 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+
   .botoes,
   .botoes button {
     width: 100%;
   }
 }
 
-body{
+body {
   background-color: black;
 }
-td{
+
+td {
   border-radius: 5px;
   border: solid 1px yellow;
 }

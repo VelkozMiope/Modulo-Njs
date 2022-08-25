@@ -1,13 +1,26 @@
 const transacoes = {
+    saldo: 10,
     transacoes: [
         {
-            valor: 10,
-            descricao: "Pastel"
+            descricao: 'Salgado na faculdade',
+            categoria: 'Despesa',
+            valor: 5.5
         },
         {
-            valor: 3,
-            descricao: "Doce"
-        }
+            descricao: 'Livro Clean Code',
+            categoria: 'Despesa',
+            valor: 50
+        },
+        {
+            descricao: 'Grana do estágio',
+            categoria: 'Receita',
+            valor: 80
+        },
+        {
+            descricao: 'Capinha pro celular',
+            categoria: 'Despesa',
+            valor: 15
+        },
     ]
 }
 class TransacoesRepositorio {

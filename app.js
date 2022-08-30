@@ -1,6 +1,6 @@
 const express = require('express')
 
-const TransacoesRepositorio = require("./transacoes-repositorio")
+const TransacoesRepositorio = require("./infra/transacoes-repositorio")
 
 const app = express()
 

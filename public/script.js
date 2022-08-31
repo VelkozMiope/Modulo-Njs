@@ -103,7 +103,7 @@ async function getTransacoes() {
 
 async function enviaDados(transacao) {
   console.log(transacao)
-  const url = '/transacoes'
+  const url = await ('/transacoes')
   const req = await fetch(url, {
     method: 'POST', body: JSON.stringify(transacao), headers: {
       "content-type": "application/json"

@@ -92,8 +92,7 @@ document
 
 async function getTransacoes() {
 
-  const resposta = await fetch("https://3000-velkozmiope-modulonjs-oiiblhne0cp.ws-us63.gitpod.io/transacoes"
-  );
+  const resposta = await fetch("/transacoes");
   const financas = await resposta.json();
 
   setSaldo(financas.saldo);
@@ -104,7 +103,7 @@ async function getTransacoes() {
 
 async function enviaDados(transacao) {
   console.log(transacao)
-  const url = 'https://3000-velkozmiope-modulonjs-oiiblhne0cp.ws-us63.gitpod.io/transacoes'
+  const url = '/transacoes'
   const req = await fetch(url, {
     method: 'POST', body: JSON.stringify(transacao), headers: {
       "content-type": "application/json"
